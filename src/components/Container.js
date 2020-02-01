@@ -7,6 +7,8 @@ const Container = () => {
    // State de la app
    const [ busqueda, guardarBusqueda ] = useState(''); 
    const [ imagenes, guardarImagenes ] = useState([]);
+   const [ paginaactual, guardarPaginaActual ] = useState(1);
+   const [ totalPaginas, guardarTotalPaginas ]  = useState(1); 
 
    useEffect(() => {
      const consultarAPI = async () => {
@@ -21,12 +23,34 @@ const Container = () => {
       const resultado = await respuesta.json();
 
       guardarImagenes(resultado.hits);
-      
+
+      // Calcular el total de páginas
+
+      const calcularTotalPaginas = Math.ceil(resultado.totalHits / imagenesPorPagina)
+      guardarTotalPaginas(calcularTotalPaginas)
      }
      
      consultarAPI();
 
    }, [busqueda])
+
+   // Definir la función para ir a la página anterior 
+
+   const paginaAnterior = () => {
+     const nuevaPaginaActual =  paginaactual - 1;
+
+     if(nuevaPaginaActual === 0) return;
+
+     guardarPaginaActual(nuevaPaginaActual);
+   }; 
+
+   const paginaSiguiente = () => {
+    const nuevaPaginaActual =  paginaactual + 1;
+
+    if(nuevaPaginaActual > totalPaginas) return;
+
+    guardarPaginaActual(nuevaPaginaActual);
+   }
 
   return ( 
     <div className='container'>
@@ -40,6 +64,29 @@ const Container = () => {
         <ListadoImagenes 
           imagenes={imagenes}
         /> 
+      
+      {(paginaactual === 1) 
+      ? 
+          null 
+      :   
+          (<button
+              type='button'
+              className='bbtn btn-info mr-1'
+              onClick={paginaAnterior}
+          >&laquo;Anterior </button>)}
+
+        {(paginaactual === totalPaginas)
+        ?
+          null
+        :
+          (<button
+              type='button'
+              className='bbtn btn-info'
+              onClick={paginaSiguiente}
+          >Siguiente &raquo;</button>)
+        }
+
+        
       </div>
     </div>
    );
