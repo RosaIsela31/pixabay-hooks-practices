@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d9726111ad684163fdc10ce4941ad4d8",
+    "revision": "ccb7e1da2507c862f17508783107915a",
     "url": "/pixabay-hooks-practices/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pixabay-hooks-practices/static/js/2.611f0b29.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b6b8000e26e5213ff16d",
-    "url": "/pixabay-hooks-practices/static/js/main.a7e6a21e.chunk.js"
+    "revision": "70b07f05fa820c7b8910",
+    "url": "/pixabay-hooks-practices/static/js/main.10c3b071.chunk.js"
   },
   {
     "revision": "acc1ebb361f47eb86c14",

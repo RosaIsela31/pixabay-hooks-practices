@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/pixabay-hooks-practices/static/js/main.a7e6a21e.chunk.js",
-    "main.js.map": "/pixabay-hooks-practices/static/js/main.a7e6a21e.chunk.js.map",
+    "main.js": "/pixabay-hooks-practices/static/js/main.10c3b071.chunk.js",
+    "main.js.map": "/pixabay-hooks-practices/static/js/main.10c3b071.chunk.js.map",
     "runtime-main.js": "/pixabay-hooks-practices/static/js/runtime-main.024c0dbd.js",
     "runtime-main.js.map": "/pixabay-hooks-practices/static/js/runtime-main.024c0dbd.js.map",
     "static/js/2.611f0b29.chunk.js": "/pixabay-hooks-practices/static/js/2.611f0b29.chunk.js",
     "static/js/2.611f0b29.chunk.js.map": "/pixabay-hooks-practices/static/js/2.611f0b29.chunk.js.map",
     "index.html": "/pixabay-hooks-practices/index.html",
-    "precache-manifest.b3d4cad84fd7d7cd15c077a15c1c4217.js": "/pixabay-hooks-practices/precache-manifest.b3d4cad84fd7d7cd15c077a15c1c4217.js",
+    "precache-manifest.0e3d84acc4e03ebaeb0faae84f8b8cc4.js": "/pixabay-hooks-practices/precache-manifest.0e3d84acc4e03ebaeb0faae84f8b8cc4.js",
     "service-worker.js": "/pixabay-hooks-practices/service-worker.js",
     "static/js/2.611f0b29.chunk.js.LICENSE.txt": "/pixabay-hooks-practices/static/js/2.611f0b29.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.024c0dbd.js",
     "static/js/2.611f0b29.chunk.js",
-    "static/js/main.a7e6a21e.chunk.js"
+    "static/js/main.10c3b071.chunk.js"
   ]
 }
